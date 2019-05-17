@@ -17,7 +17,7 @@ public class UserFollow {
     // 这是一个主键
     @Id
     @PrimaryKeyJoinColumn
-    // 逐渐生成存储的类型为UUID
+    // 主键生成存储的类型为UUID
     @GeneratedValue(generator = "uuid")
     // 把uuid的生成器定义为uuid2，uuid2时常规的UUID toString
     @GenericGenerator(name = "uuid", strategy = "uuid2")
