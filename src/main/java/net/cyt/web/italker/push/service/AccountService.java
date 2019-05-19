@@ -1,7 +1,6 @@
 package net.cyt.web.italker.push.service;
 
-import net.cyt.web.italker.push.bean.User;
-
+import net.cyt.web.italker.push.bean.db.User;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 
