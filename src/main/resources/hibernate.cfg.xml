@@ -19,7 +19,7 @@
         <property name="connection.pool_size">5</property>
 
         <!-- SQL 方言 -->
-        <property name="dialect">org.hibernate.dialect.MySQL57Dialect</property>
+        <property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
 
         <!-- Hibernate session 上下文为线程级别 -->
         <property name="current_session_context_class">thread</property>
@@ -56,23 +56,20 @@
         -->
 
 
-     <!--   <mapping package="net.qiujuer.web.italker.push.bean.db"
-                 class="net.qiujuer.web.italker.push.bean.db.User"/>
-        <mapping package="net.qiujuer.web.italker.push.bean.db"
-                 class="net.qiujuer.web.italker.push.bean.db.UserFollow"/>
-
-        <mapping package="net.qiujuer.web.italker.push.bean.db"
-                 class="net.qiujuer.web.italker.push.bean.db.Group"/>
-        <mapping package="net.qiujuer.web.italker.push.bean.db"
-                 class="net.qiujuer.web.italker.push.bean.db.GroupMember"/>
-
-        <mapping package="net.qiujuer.web.italker.push.bean.db"
-                 class="net.qiujuer.web.italker.push.bean.db.Message"/>
-
-        <mapping package="net.qiujuer.web.italker.push.bean.db"
-                 class="net.qiujuer.web.italker.push.bean.db.PushHistory"/>
-        <mapping package="net.qiujuer.web.italker.push.bean.db"
-                 class="net.qiujuer.web.italker.push.bean.db.Apply"/>-->
+        <mapping package="net.cyt.web.italker.push.bean.db"
+                 class="net.cyt.web.italker.push.bean.db.User"/>
+        <mapping package="net.cyt.web.italker.push.bean.db"
+                 class="net.cyt.web.italker.push.bean.db.UserFollow"/>
+        <mapping package="net.cyt.web.italker.push.bean.db"
+                 class="net.cyt.web.italker.push.bean.db.Group"/>
+        <mapping package="net.cyt.web.italker.push.bean.db"
+                 class="net.cyt.web.italker.push.bean.db.GroupMember"/>
+        <mapping package="net.cyt.web.italker.push.bean.db"
+                 class="net.cyt.web.italker.push.bean.db.Message"/>
+        <mapping package="net.cyt.web.italker.push.bean.db"
+                 class="net.cyt.web.italker.push.bean.db.PushHistory"/>
+        <mapping package="net.cyt.web.italker.push.bean.db"
+                 class="net.cyt.web.italker.push.bean.db.Apply"/>
 
     </session-factory>
 </hibernate-configuration>

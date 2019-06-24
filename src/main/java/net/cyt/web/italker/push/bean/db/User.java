@@ -4,6 +4,7 @@ import org.hibernate.annotations.*;
 
 import javax.persistence.*;
 import javax.persistence.CascadeType;
+import javax.persistence.Entity;
 import javax.persistence.Table;
 import javax.ws.rs.Encoded;
 import java.time.LocalDateTime;
@@ -13,7 +14,7 @@ import java.util.Set;
 /**
  * 用户的Model，对应数据库
  */
-@Encoded
+@Entity
 @Table(name = "TB_USER")
 public class User {
 
