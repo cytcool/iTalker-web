@@ -1,6 +1,7 @@
 package net.cyt.web.italker.push.card;
 
 import com.google.gson.annotations.Expose;
+import net.cyt.web.italker.push.bean.db.User;
 
 import java.time.LocalDateTime;
 
@@ -33,6 +34,16 @@ public class UserCard {
     // 用户信息最后的更新时间
     @Expose
     private LocalDateTime modifyAt;
+
+    public UserCard(final User user){
+        this.id = user.getId();
+        this.name = user.getName();
+        this.phone = user.getPhone();
+        this.sex = user.getSex();
+        this.portrait = user.getPortrait();
+        this.desc = user.getDescription();
+        this.modifyAt = user.getUpdateAt();
+    }
 
     public String getId() {
         return id;
