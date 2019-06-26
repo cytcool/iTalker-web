@@ -36,6 +36,10 @@ public class UserCard {
     private LocalDateTime modifyAt;
 
     public UserCard(final User user){
+       this(user,false);
+    }
+
+    public UserCard(final User user,boolean isFollow){
         this.id = user.getId();
         this.name = user.getName();
         this.phone = user.getPhone();
@@ -43,6 +47,7 @@ public class UserCard {
         this.portrait = user.getPortrait();
         this.desc = user.getDescription();
         this.modifyAt = user.getUpdateAt();
+        this.isFollow = isFollow;
     }
 
     public String getId() {
